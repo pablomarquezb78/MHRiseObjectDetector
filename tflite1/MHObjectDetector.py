@@ -1,15 +1,11 @@
 import tkinter as tk
 import cv2
-import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib
 import json
 import os
 from PIL import Image, ImageTk
 from scipy import signal
 from threading import Thread
-
-matplotlib.rcParams['figure.figsize'] = (20.0, 20.0)
 
 icons_path = './monsterIcons/'
 maps_path = './maps/'
@@ -118,6 +114,7 @@ def load_data(route):
     return resList
 
 
+# Returns true if the file with file_name is in the project folder
 def file_exists(file_name):
     current_directory = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(current_directory, file_name)
@@ -507,10 +504,6 @@ class ObjectDetectorApp:
         # Convert image to gray
         gray = cv2.cvtColor(smoothed1, cv2.COLOR_RGB2GRAY)
 
-        plt.subplot(2, 2, 1)
-        plt.imshow(gray, cmap='gray')
-        plt.title('without cropping')
-
         # Let´s crop unnecessary margins:
         # First obtain the intensity of Icon background, by obtaining the pixel intensity with more frequency.
         hist = cv2.calcHist([gray], [0], None, [256], [0, 256])
@@ -519,21 +512,7 @@ class ObjectDetectorApp:
         # Now it´s crop time
         OFFSET = 60
         cropped = cropEdges(smoothed1, more_frequent_intensity, OFFSET)
-
-        plt.subplot(2, 2, 2)
-        plt.imshow(cropped)
-        plt.title('Half cropped')
-
         cropped = cropCorners(cropped, more_frequent_intensity, OFFSET)
-
-        plt.subplot(2, 2, 3)
-        plt.imshow(cropped)
-        plt.title('cropped')
-
-        plt.subplot(2, 2, 4)
-        plt.title("Histogram")
-        plt.hist(gray.ravel(), 256, [0, 256])  # ravel() returns a 1-D array, containing the elements of image
-        plt.show()
 
         # Gaussian smoothing after crop
         cropped = gaussian_smoothing(cropped, 2, 2)
