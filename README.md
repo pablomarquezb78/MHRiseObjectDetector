@@ -20,12 +20,13 @@ Enter "y" when it asks if you want to proceed. Activate the environment and inst
 ```
 conda activate tflite1-env
 pip install tensorflow opencv-python protobuf==3.20.*
+pip install Scipy
 ```
 
 *If you use another path for 'tflite1' you will have to change .py file and update the variables on function 'run_object_detection' on MHObjectDetector.py as it is commented there.*
 
 ## Optional Step: Change TFLite model:
-Our project already includes a TFLite trained model, but if you want to use another one, you just need to replace the 'TFLite_model' folder on our 'tflite1' folder with your trained model, I used this google colab to create my model: https://colab.research.google.com/github/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Train_TFLite2_Object_Detction_Model.ipynb#scrollTo=GSJ2wgGCixy2, you can create your model in other ways but you will probably need to make some changes on the project configuration to make it work.
+Our project already includes a TFLite trained model, but if you want to use another one, you just need to replace the 'TFLite_model' folder on our 'tflite1' folder with your trained model, I used this google colab to create my model: https://colab.research.google.com/github/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Train_TFLite2_Object_Detction_Model.ipynb#scrollTo=GSJ2wgGCixy2, you can either create your model in other ways but you will probably need to make some changes on the project configuration to make it work.
 
 ## Step 4: Run the Project
-Now you just need to run PyCharm open the 'tflite1' folder and run it!, you will need to enter on the textbox of the opened window the name of the video which you would like to make the inference, on our folder I include 5 videos v1,v2..v5.mp4, but if you want, you can use your own .mp4 you just need to introduce them on the 'tflite1' folder and then enter their name (whithout .mp4) on the program.
+Now you just need to run PyCharm open the 'tflite1' folder, make sure to **use anaconda python interpreter** by going to File, Settings, project and then python interpreter, once you have set up the interpreter you can run it! You will need to enter on the textbox of the opened window the name of the video which you would like to make the inference, on our folder I include 5 videos v1,v2..v5.mp4, but if you want, you can use your own .mp4 you just need to introduce them on the 'tflite1' folder and then enter their name (whithout .mp4) on the program.
