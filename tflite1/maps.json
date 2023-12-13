@@ -1,0 +1,29 @@
+{
+  "maps": [
+    {
+      "id" : "1",
+      "name": "Shrine ruins",
+      "text": "Once a place where people prayed for protection, this shrine has fallen into decay and is now haunted by the roars of monsters, day and night. However, it still maintains its holy nature and exudes a mysterious aura. \nA lush wet area, the Shrine Ruins features large cliffs and hills for the Hunter to ascend using the Wirebug. Dotted around the area are the ruins of an old Shrine that hide secrets within their crumbling and mossy walls."
+    },
+    {
+      "id" : "2",
+      "name": "Sandy Plains",
+      "text": "A desolate wasteland, filled with aggressive monsters that hunger for flesh and blood. During the day, the sun beats down on the plains mercilessly, but at night it's lit up by the cool moonlight."
+    },
+    {
+      "id" : "3",
+      "name": "Flooded Forest",
+      "text": "This forest is a dense region of deep, dark green. Due to a constant flow of water, the majority of this forest has become submerged. The eye-catching ruins here can be scaled by using the Wirebug."
+    },
+    {
+      "id" : "4",
+      "name": "Frost Islands",
+      "text": "The Frost Islands used to be the nest of a gigantic dragon. Many heroes lost their lives trying to slay the beast, turning it into a barren place of desolation and death. In the center of the islands lie giant dragon bones and the remnants of a Dragonship, the final traces left by a desperate struggle."
+    },
+    {
+      "id" : "5",
+      "name": "Lava Caverns",
+      "text": "This large cave system is divided into a searing hot area with flowing lava, and a nice cool area with beautifully pure water. It would be a wonderfully mystical environment if it wasn't teeming with monsters..."
+    }
+  ]
+}

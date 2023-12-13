@@ -1,0 +1,40 @@
+item {
+  id: 1
+  name: 'icon'
+}
+
+item {
+  id: 2
+  name: 'map'
+}
+
+item {
+  id: 3
+  name: 'sharp'
+}
+
+item {
+  id: 4
+  name: 'health'
+}
+
+item {
+  id: 5
+  name: 'stamina'
+}
+
+item {
+  id: 6
+  name: 'player'
+}
+
+item {
+  id: 7
+  name: 'cat'
+}
+
+item {
+  id: 8
+  name: 'dog'
+}
+

@@ -1,0 +1,8 @@
+icon
+map
+sharp
+health
+stamina
+player
+cat
+dog
