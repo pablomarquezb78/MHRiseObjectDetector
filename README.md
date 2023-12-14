@@ -16,7 +16,7 @@ Next create a python 3.9 virtual enviroment:
 ```
 conda create --name tflite1-env python=3.9
 ```
-Enter "y" when it asks if you want to proceed. Activate the environment and install the required packages by issuing the commands below. We'll install TensorFlow, OpenCV, and a downgraded version of protobuf:
+Enter "y" when it asks if you want to proceed. Activate the environment and install the required packages by issuing the commands below. We'll install TensorFlow, OpenCV, a downgraded version of protobuf, and Scipy:
 ```
 conda activate tflite1-env
 pip install tensorflow opencv-python protobuf==3.20.*
