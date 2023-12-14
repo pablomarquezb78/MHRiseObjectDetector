@@ -23,7 +23,8 @@ pip install tensorflow opencv-python protobuf==3.20.*
 pip install Scipy
 ```
 
-*If you use another path for 'tflite1' you will have to change .py file and update the variables on function 'run_object_detection' on MHObjectDetector.py as it is commented there.*
+>[!NOTE]
+>If you use another path for 'tflite1' you will have to change .py file and update the variables on function 'run_object_detection' on MHObjectDetector.py >as it is commented there.*
 
 ## Optional Step: Change TFLite model:
 Our project already includes a TFLite trained model, but if you want to use another one, you just need to replace the 'TFLite_model' folder on our 'tflite1' folder with your trained model, I used this google colab to create my model: https://colab.research.google.com/github/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Train_TFLite2_Object_Detction_Model.ipynb#scrollTo=GSJ2wgGCixy2, you can either create your model in other ways but you will probably need to make some changes on the project configuration to make it work.
