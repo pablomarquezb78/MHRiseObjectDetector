@@ -1,4 +1,4 @@
-# MHRiseObjectDetection
+# MHRiseObjectDetector
 MHObjectDetector is a program which takes a TFLite trained model on videogame Monster hunter rise, and makes an inference of the model on a gameplay video, it is prepared to detect health,stamina and sharp bar, felyne and canyne comrade, player, map and monster icons, concretely with the icons, this program makes an image matching between icons detected by the model and a folder with all monster icons, this mixed with a monster info JSON give us information about the monster matched with each detection, this program does this same thing with the map, also using a map JSON and a folder with map images.
 
 On this upload I include an already trained TFLite model, trained with 200 labeled images, and 5 videos to try the inference, one for each in-game map. It is important to say that this program is based on Monster hunter Rise base game, so it only includes the 5 base game maps and no special maps.
